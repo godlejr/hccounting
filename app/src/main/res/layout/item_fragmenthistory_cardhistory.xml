@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_gray_top_and_bottom"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:id="@+id/ll_history_content"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:layout_weight="0.65">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_history_vendor_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textSize="16sp"
+                    android:text=""
+                    android:textColor="@color/defaultTextColor"
+                    android:gravity="center_vertical|left"
+                    android:maxLength="10" />
+
+                <TextView
+                    android:id="@+id/tv_history_date_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:textColor="@color/darkGray"
+                    android:gravity="left"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_history_money"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:paddingRight="6dp"
+            android:textSize="18sp"
+            android:text=""
+            android:textColor="@color/pointColor"
+            android:gravity="center_vertical|right"
+            />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/defaultTextColor"
+            android:text=""
+            android:textSize="25sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

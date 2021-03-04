@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="hcc.accouting.haccounting.ui.main.activity.MainActivity" >
+
+    <include
+        android:id="@+id/in_mainactivity_toolbar"
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_mainactivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border_darkgray_bottom"
+        app:layout_collapseMode="pin"
+        app:tabIndicatorColor="@color/pointColor"
+        app:tabTextColor="@color/darkGray" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_mainactivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/in_mainactivity_toolbar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/tl_mainactivity"
+        app:layout_constraintRight_toRightOf="@+id/tl_mainactivity"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.963"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"/>
+
+</FrameLayout>

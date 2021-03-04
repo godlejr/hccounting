@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="130dp"
+    android:background="@drawable/all_roundbox_white_r10"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_confirmcanceldialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/defaultTextColor"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+        <Button
+            android:id="@+id/btn_confirmcanceldialog_confirm"
+            android:text="확인"
+            android:gravity="center"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textColor="@color/defaultTextColor"
+
+            android:background="@drawable/border_darkgray"
+            />
+        <Button
+            android:id="@+id/btn_confirmcanceldialog_cancel"
+            android:text="취소"
+            android:gravity="center"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/defaultTextColor"
+            android:background="@drawable/border_darkgray"
+            android:layout_weight="0.5"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
